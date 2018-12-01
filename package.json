@@ -4,9 +4,9 @@
   "description": "default dependencies",
   "main": "index.js",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
+    "prestart": "babel-node buildScripts/startMessage.js",
     "start":"npm-run-all --parallel security-check open-server",
-    "open-server": "node buildScripts/srcServer.js",
+    "open-server": "babel-node buildScripts/srcServer.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "security-check":"nsp check",
     "localtunnel":  "lt --port 3000",

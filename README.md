@@ -13,3 +13,4 @@ convention scripts - start, prestart (automatically called before start)
 usage > npm start
 user defined - like security-check,share - use as 
 npm run <script>
+Configured Transpiler - Babel to use ES6
