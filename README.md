@@ -7,3 +7,9 @@ https://gist.github.com/coryhouse/29bd1029b623beb4c7f79b748dcba844
 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+
+automation added - scripts
+convention scripts - start, prestart (automatically called before start)
+usage > npm start
+user defined - like security-check,share - use as 
+npm run <script>
