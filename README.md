@@ -14,3 +14,5 @@ usage > npm start
 user defined - like security-check,share - use as 
 npm run <script>
 Configured Transpiler - Babel to use ES6
+Bundling - using webpack
+added - webpack.config.dev js file
