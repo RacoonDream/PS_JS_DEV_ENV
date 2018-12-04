@@ -13,7 +13,7 @@ function get(url){
 function onSuccess(response){
 // console.log( response.json());
 //debugger;
-response.json();
+return response.json();
 }
 function onError(error)
 {

@@ -32,7 +32,7 @@ app.get('/',function(req,res){
   res.sendFile(join(__dirname,'../src/index.html'));
 });
 
-app.get('users',function(req,res){
+app.get('/users',function(req,res){
   res.json([
     {"id":1,"firstName":"Max","lastName":"Ray","email":"idk@hh.com"},
     {"id":2,"firstName":"Kochu","lastName":"TV","email":"idk@hh.com"},

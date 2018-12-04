@@ -9,17 +9,17 @@ console.log(`I would earn ${courseValue} from this awesone course!`);// ES6 temp
 getUsers().then(result=>{
 
  let usersBody="";
- console.log("results: "+ result);
+
  result.forEach(user=>{
- usersBody+=`
-<tr>
+console.log(user.firstName);
+ usersBody += `<tr>
  <td>${user.id}</td>
  <td>${user.firstName}</td>
  <td>${user.lastName}</td>
  <td>${user.email}</td>
- </tr>
- `
+ </tr>`
  });
 
- global.document.getElementById('users').innerHtml=usersBody;
+ global.document.getElementById('users').innerHTML=usersBody;
+
 });
