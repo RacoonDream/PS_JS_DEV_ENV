@@ -10,12 +10,12 @@ it('should pass',()=>{
 
 
 describe('Test for index.html',()=>{
-  it('test1:says hello',(done)=>{ // done is not a keyword, use anything ti make test synchronous
+  it('test1:says Users',(done)=>{ // done is not a keyword, use anything ti make test synchronous
 
       const index= fs.readFileSync('./src/index.html',"utf-8")
       jsdom.env(index,function(err,window){
           const h1= window.document.getElementsByTagName('h1')[0];
-          expect(h1.innerHTML).to.equal("Hello World!");
+          expect(h1.innerHTML).to.equal("Users");
           done();
           window.close();
       });

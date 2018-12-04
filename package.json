@@ -7,7 +7,6 @@
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open-server lint:watch test:watch",
     "open-server": "babel-node buildScripts/srcServer.js",
-
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open-server localtunnel",
@@ -31,6 +30,7 @@
   },
   "homepage": "https://github.com/RacoonDream/PS_JS_DEV_ENV#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "set-default-browser": "^1.0.1",
     "whatwg-fetch": "1.0.0"
   },
